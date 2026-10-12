@@ -44,7 +44,6 @@ import {
   ShieldCheck,
   Box,
   Maximize2,
-  Minimize2,
   Radio,
   Cpu
 } from 'lucide-react';

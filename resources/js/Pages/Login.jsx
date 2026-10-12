@@ -13,57 +13,6 @@ import {
 import AuthRobotModal from '../Components/AuthRobotModal';
 import AnimatedBackground from '../Components/AnimatedBackground';
 
-function ParticleCanvas() {
-  const canvasRef = useRef(null);
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-    let animId;
-    const resize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
-    resize();
-    window.addEventListener('resize', resize);
-    const COLORS = ['#2DD4BF', '#4F7CFF', '#8B5CF6', '#22D3EE', '#a78bfa'];
-    const pts = Array.from({ length: 50 }, () => ({
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      vx: (Math.random() - 0.5) * 0.4,
-      vy: (Math.random() - 0.5) * 0.4,
-      r: Math.random() * 2 + 0.5,
-      c: COLORS[Math.floor(Math.random() * COLORS.length)],
-      a: Math.random() * 0.45 + 0.1,
-    }));
-    const tick = () => {
-      const W = canvas.width; const H = canvas.height;
-      ctx.clearRect(0, 0, W, H);
-      pts.forEach((p) => {
-        p.x += p.vx; p.y += p.vy;
-        if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
-        if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
-        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = p.c; ctx.globalAlpha = p.a;
-        ctx.fill(); ctx.globalAlpha = 1;
-      });
-      for (let i = 0; i < pts.length; i++) {
-        for (let j = i + 1; j < pts.length; j++) {
-          const dx = pts[i].x - pts[j].x; const dy = pts[i].y - pts[j].y;
-          const d = Math.sqrt(dx * dx + dy * dy);
-          if (d < 120) {
-            ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
-            ctx.strokeStyle = '#4F7CFF'; ctx.globalAlpha = (1 - d / 120) * 0.1;
-            ctx.lineWidth = 0.6; ctx.stroke(); ctx.globalAlpha = 1;
-          }
-        }
-      }
-      animId = requestAnimationFrame(tick);
-    };
-    tick();
-    return () => { window.removeEventListener('resize', resize); cancelAnimationFrame(animId); };
-  }, []);
-  return <canvas ref={canvasRef} style={{ position: 'fixed', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 0 }} />;
-}
-
 function RobotMascot() {
   const [badgeIdx, setBadgeIdx] = useState(0);
   const BADGE_WORDS = [

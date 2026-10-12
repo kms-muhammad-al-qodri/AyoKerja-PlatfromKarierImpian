@@ -1733,12 +1733,6 @@ const Landing = () => {
     { Icon: Route,      color: '#22D3EE', cRgb: '34,211,238',  title: t('landing.aiExp.f3Title', 'Roadmap Personal'),     desc: t('landing.aiExp.f3Desc', 'Langkah konkret dari posisimu sekarang menuju tujuan karier yang kamu impikan.') },
   ];
 
-  const TESTIMONIALS = [
-    { name: 'Rizki D.', role: t('landing.testimonials.t1.role', 'Fresh Graduate → Marketing Executive'), avatar: testiUser1, color: '#4F7CFF', cRgb: '79,124,255', stars: 5, quote: t('landing.testimonials.t1.quote', 'Saya gak nyangka AI bisa memberikan masukan CV yang sangat relevan. Setelah optimasi format Harvard ATS, dalam seminggu langsung dipanggil interview kerja.') },
-    { name: 'Alya S.',  role: t('landing.testimonials.t2.role', 'Mahasiswa Tingkat Akhir → Junior Designer'), avatar: testiUser2, color: '#8B5CF6', cRgb: '139,92,246', stars: 5, quote: t('landing.testimonials.t2.quote', 'Roadmap karier dari AI bener-bener spesifik sesuai latar belakang dan jurusan saya. Sangat membantu menyusun langkah nyata menuju dunia kerja.') },
-    { name: 'Fajar I.', role: t('landing.testimonials.t3.role', 'Career Switcher → Business Analyst'), avatar: testiUser3, color: '#22D3EE', cRgb: '34,211,238', stars: 5, quote: t('landing.testimonials.t3.quote', 'Fitur rekomendasi karier dan roadmap AI-nya juara banget. Saya jadi tahu langkah pasti untuk bidang baru yang saya incar dan cara belajarnya.') },
-  ];
-
   return (
     <main style={{ background: '#050816', minHeight: '100vh', overflowX: 'hidden', fontFamily: "'Inter',sans-serif" }}>
       <Head title="Kecerdasan Karier AI & Job Matching Platform" />

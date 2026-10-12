@@ -3,9 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use App\Models\JobPosting;
 use App\Models\CvProfile;
-use App\Models\JobMatch;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 

@@ -18,15 +18,12 @@ import {
   Phone,
   MapPin,
   Calendar,
-  Send,
-  Award,
   BookOpen,
   Briefcase,
   Layers,
   ChevronDown,
   ChevronUp,
   ChevronLeft,
-  ChevronRight,
   Wand2,
   FileCheck2,
   ShieldCheck,
@@ -34,10 +31,8 @@ import {
   Languages,
   Sliders,
   Maximize2,
-  Minimize2,
   ZoomIn,
   ZoomOut,
-  RotateCcw,
   Globe,
   Star,
   AlertCircle,
@@ -53,13 +48,8 @@ import {
   Image as ImageIcon,
   Eraser,
   Zap,
-  Target,
-  CheckCheck,
-  ExternalLink
 } from 'lucide-react';
 import axios from 'axios';
-import { jsPDF } from 'jspdf';
-import html2canvas from 'html2canvas-pro';
 import { downloadElementAsPdf, printElementViaIframe } from '../../Utils/printHelper';
 
 // Global Multi-Language & Country Support (35+ Countries & International Languages - No Emojis)
@@ -1061,7 +1051,7 @@ export default function CoverLetterBuilder({ user = {}, stats = {} }) {
     showToast("Semua optimasi AI (Typo, STAR %, & Standar Industri) berhasil diterapkan!");
   };
 
-  // Direct High-Resolution PDF Download using html2canvas-pro & jsPDF
+  // Direct High-Resolution PDF Download
   const handleDownloadPdf = async () => {
     if (previewViewTab !== 'paper') {
       setPreviewViewTab('paper');

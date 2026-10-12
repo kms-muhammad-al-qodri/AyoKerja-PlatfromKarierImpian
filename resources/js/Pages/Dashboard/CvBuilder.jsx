@@ -14,7 +14,6 @@ import {
   FolderGit2,
   Wrench,
   RefreshCw,
-  Printer,
   Sliders,
   Check,
   ChevronDown,
@@ -23,13 +22,10 @@ import {
   ChevronRight,
   Eraser,
   Layout,
-  Award,
-  ExternalLink,
   Palette,
   Globe,
   Star,
   Maximize2,
-  Minimize2,
   Eye,
   ZoomIn,
   ZoomOut,
@@ -58,9 +54,6 @@ import {
   Wand2
 } from 'lucide-react';
 import axios from 'axios';
-import html2canvas from 'html2canvas-pro';
-import { jsPDF } from 'jspdf';
-import html2pdf from 'html2pdf.js';
 import { downloadElementAsPdf, printElementViaIframe } from '../../Utils/printHelper';
 import * as pdfjsLib from 'pdfjs-dist';
 
@@ -1920,7 +1913,7 @@ export default function CvBuilder({ user = {}, stats = {} }) {
     setForm({ ...form, educationList: updated });
   };
 
-  const addEducationItem = () => {
+    const addEducation = () => {
     const newEdu = {
       institution: '',
       degree: '',
@@ -1932,17 +1925,49 @@ export default function CvBuilder({ user = {}, stats = {} }) {
       coursework: '',
       activities: ''
     };
-    setForm({ ...form, educationList: [...form.educationList, newEdu] });
+    setForm({ ...form, educationList: [...(form.educationList || []), newEdu] });
   };
 
-  const removeEducationItem = (index) => {
-    if (form.educationList.length <= 1) {
+  const removeEducation = (index) => {
+    if ((form.educationList || []).length <= 1) {
       showToast("Minimum 1 riwayat pendidikan.");
       return;
     }
     const updated = form.educationList.filter((_, i) => i !== index);
     setForm({ ...form, educationList: updated });
   };
+
+  const addExperience = () => {
+    const newExp = {
+      company: '',
+      role: '',
+      period: '',
+      location: '',
+      bullets: ['']
+    };
+    setForm({ ...form, experienceList: [...(form.experienceList || []), newExp] });
+  };
+
+  const removeExperience = (index) => {
+    const updated = form.experienceList.filter((_, i) => i !== index);
+    setForm({ ...form, experienceList: updated });
+  };
+
+  const addProject = () => {
+    const newProj = {
+      name: '',
+      technologies: '',
+      period: '',
+      bullets: ['']
+    };
+    setForm({ ...form, projectList: [...(form.projectList || []), newProj] });
+  };
+
+  const removeProject = (index) => {
+    const updated = form.projectList.filter((_, i) => i !== index);
+    setForm({ ...form, projectList: updated });
+  };
+
 
   // Form Field Updaters
   const updateExperience = (index, field, value) => {
@@ -1967,17 +1992,6 @@ export default function CvBuilder({ user = {}, stats = {} }) {
     const updated = [...form.experienceList];
     updated[expIndex].bullets = updated[expIndex].bullets.filter((_, i) => i !== bulletIndex);
     setForm({ ...form, experienceList: updated });
-  };
-
-  const addExperienceItem = () => {
-    const newExp = {
-      company: '',
-      role: '',
-      period: '',
-      location: '',
-      bullets: ['']
-    };
-    setForm({ ...form, experienceList: [...form.experienceList, newExp] });
   };
 
   const removeExperienceItem = (index) => {

@@ -18,7 +18,6 @@
     "dependencies": {
         "@inertiajs/react": "^3.7.1",
         "framer-motion": "^13.3.0",
-        "html2canvas": "^1.4.1",
         "html2canvas-pro": "^2.5.0",
         "html2pdf.js": "^0.14.0",
         "i18next": "^26.4.2",

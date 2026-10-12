@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\CvProfile;
 use App\Models\CvAnalysis;
-use App\Models\JobPosting;
 use App\Models\CareerRoadmap;
 use App\Services\AiCareerService;
 use App\Services\CvParserService;
