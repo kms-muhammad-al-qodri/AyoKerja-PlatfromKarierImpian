@@ -1,0 +1,11 @@
+.git/
+.git/**
+node_modules/
+node_modules/**
+tests/
+tests/**
+scratch/
+scratch/**
+.env
+.env.*
+README.md

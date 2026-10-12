@@ -1,0 +1,459 @@
+{
+  "lang": {
+    "id": "Indonesia",
+    "en": "English",
+    "flag_id": "🇮🇩",
+    "flag_en": "🇬🇧"
+  },
+  "header": {
+    "subtitle": "Dream Career Assistant",
+    "mainMenu": "Main Menu →"
+  },
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How It Works",
+    "services": "Our Services",
+    "advantages": "Smart Advantages",
+    "testimonials": "Success Stories",
+    "login": "Log In",
+    "register": "Get Started Free",
+    "logout": "Log Out",
+    "getStarted": "Get Started",
+    "workspace": "Workspace"
+  },
+  "dashboard": {
+    "aiEngineActive": "AI Engine Active",
+    "encryptedSSL": "SSL Encrypted System",
+    "tabs": {
+      "overview": "AI Overview",
+      "analysis": "CV Analysis",
+      "jobs": "Job Listings",
+      "roadmap": "Career Roadmap",
+      "cvBuilder": "ATS CV Builder",
+      "coverLetter": "AI Cover Letter"
+    },
+    "categories": {
+      "UTAMA": "MAIN",
+      "KARIR": "CAREER",
+      "ALAT": "TOOLS"
+    },
+    "greeting": "Welcome back, {{name}}! 👋",
+    "greetingSubtitle": "Your AI career platform is ready to guide your journey.",
+    "profileCard": {
+      "role": "Role"
+    }
+  },
+  "overview": {
+    "title": "Career Overview",
+    "atsScore": "CV ATS Score",
+    "careerMatch": "Career Match",
+    "skillProgress": "Skill Progress",
+    "jobsFound": "Jobs Found",
+    "uploadCv": "Upload CV",
+    "sampleCv": "Sample CV",
+    "refreshData": "Refresh Live Data",
+    "topJobMatch": "Top Job Match",
+    "matchedSkills": "Matched Skills",
+    "missingSkills": "Missing Skills",
+    "applyNow": "Apply Now",
+    "noJobs": "No jobs found. Try refreshing live data.",
+    "noAnalysis": "No CV analysis yet. Upload your CV first!",
+    "uploading": "Uploading...",
+    "analyzing": "Analyzing...",
+    "dataUpdated": "Data updated!",
+    "liveData": "Live Data",
+    "lastUpdated": "Last updated"
+  },
+  "cvAnalysis": {
+    "title": "CV Quality Analysis",
+    "subtitle": "Discover how strong your CV is against ATS systems and hiring recruiters.",
+    "overallScore": "Overall ATS Score",
+    "contentScore": "Content Score",
+    "structureScore": "Structure Score",
+    "skillsScore": "Skills Score",
+    "experienceScore": "Experience Score",
+    "impactScore": "Impact Score",
+    "strengths": "CV Strengths",
+    "opportunities": "Improvement Areas",
+    "askAI": "Ask AyoKerja AI",
+    "uploadFirst": "Upload your CV first to get an analysis.",
+    "noCV": "No CV Found",
+    "analyzing": "Analyzing your CV...",
+    "score": "Score"
+  },
+  "jobs": {
+    "title": "Job Recommendations",
+    "subtitle": "Jobs that best match your profile, target role, and technical skills.",
+    "search": "Search Jobs",
+    "searchPlaceholder": "Search position, company...",
+    "filter": "Filter",
+    "keyword": "Keyword",
+    "country": "Country",
+    "location": "Location",
+    "jobType": "Job Type",
+    "fullTime": "Full-Time",
+    "partTime": "Part-Time",
+    "remote": "Remote/WFH",
+    "internship": "Internship",
+    "contract": "Contract",
+    "saved": "Saved",
+    "saveJob": "Save",
+    "apply": "Apply",
+    "matchScore": "Match",
+    "loadMore": "Load More",
+    "noJobs": "No matching jobs found. Try adjusting your search filters.",
+    "loading": "Loading jobs...",
+    "found": "jobs found",
+    "from": "from"
+  },
+  "roadmap": {
+    "title": "Career Roadmap",
+    "subtitle": "Personalized AI roadmap designed to help you achieve your career goals.",
+    "generateRoadmap": "Generate AI Roadmap",
+    "refreshRoadmap": "Refresh Roadmap",
+    "generating": "Generating roadmap...",
+    "phase": "Phase",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "duration": "Duration",
+    "completed": "Completed",
+    "inProgress": "In Progress",
+    "notStarted": "Not Started",
+    "addMilestone": "Add Milestone",
+    "editMilestone": "Edit Milestone",
+    "deleteMilestone": "Delete Milestone",
+    "saveChanges": "Save Changes",
+    "interviewSimulator": "Interview Simulator",
+    "startInterview": "Start Interview Session",
+    "nextQuestion": "Next Question",
+    "submitAnswer": "Submit Answer",
+    "yourAnswer": "Your Answer",
+    "aiFeedback": "AI Feedback",
+    "chat": {
+      "title": "AI Career Chat",
+      "placeholder": "Ask about career path, skills, or job search...",
+      "send": "Send",
+      "thinking": "AyoKerja AI is thinking...",
+      "welcome": "Hello! I'm ready to help plan your career. What would you like to ask?"
+    }
+  },
+  "cvBuilder": {
+    "title": "AI CV Builder",
+    "subtitle": "Build an ATS-friendly, Harvard-standard CV powered by AI.",
+    "personalInfo": "Personal Information",
+    "summary": "Professional Summary",
+    "workExperience": "Work Experience",
+    "education": "Education",
+    "skills": "Technical Skills",
+    "projects": "Projects / Portfolio",
+    "certifications": "Certifications & Awards",
+    "generateAI": "Generate with AI",
+    "generating": "AI is writing...",
+    "exportPDF": "Export PDF",
+    "print": "Print",
+    "preview": "Preview",
+    "importCV": "Import Existing CV",
+    "selectTemplate": "Select Template",
+    "translateCV": "Translate CV",
+    "selectLanguage": "Select Language",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "location": "Location",
+    "linkedin": "LinkedIn",
+    "portfolio": "Portfolio",
+    "addSection": "Add Section",
+    "save": "Save",
+    "saved": "Saved",
+    "saving": "Saving...",
+    "myCVs": "My CVs",
+    "activateCV": "Activate",
+    "deleteCV": "Delete",
+    "newCV": "New CV"
+  },
+  "coverLetter": {
+    "title": "AI Cover Letter",
+    "subtitle": "Craft persuasive and impactful cover letters tailored to your dream job.",
+    "senderInfo": "Sender Information",
+    "recipientInfo": "Recipient / Company Details",
+    "company": "Company Name",
+    "hrName": "HR Name (optional)",
+    "position": "Position Applied For",
+    "date": "Letter Date",
+    "openingParagraph": "Opening Paragraph",
+    "bodyParagraph": "Body Paragraph",
+    "closingParagraph": "Closing Paragraph",
+    "generateAI": "Generate with AI",
+    "generating": "AI is writing letter...",
+    "translateLetter": "Translate Letter",
+    "alignLeft": "Align Left",
+    "alignCenter": "Center",
+    "alignRight": "Align Right",
+    "uploadSignature": "Upload Signature",
+    "removeBackground": "Remove Signature Background",
+    "preview": "Preview Letter",
+    "exportPDF": "Export PDF",
+    "copyText": "Copy Text",
+    "print": "Print",
+    "copied": "Copied!"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign In to AyoKerja",
+      "subtitle": "Continue your AI career journey",
+      "email": "Email Address",
+      "password": "Password",
+      "rememberMe": "Remember Me",
+      "forgotPassword": "Forgot Password?",
+      "loginBtn": "Sign In",
+      "loginDemo": "Try Demo Account",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Sign Up Free"
+    },
+    "register": {
+      "title": "Create AyoKerja Account",
+      "subtitle": "Start your smart AI career journey",
+      "name": "Full Name",
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "targetRole": "Target Role / Position",
+      "level": "Experience Level",
+      "freshGrad": "Fresh Graduate",
+      "junior": "Junior (0-2 years)",
+      "mid": "Mid-Level (2-5 years)",
+      "senior": "Senior (5+ years)",
+      "location": "Work Location",
+      "workMode": "Work Mode",
+      "remote": "Remote",
+      "onsite": "Onsite",
+      "hybrid": "Hybrid",
+      "skills": "Skills",
+      "education": "Highest Education",
+      "registerBtn": "Create Account",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Sign In"
+    }
+  },
+  "landing": {
+    "hero": {
+      "titlePart1": "Your career,",
+      "titlePart2": "understood by AI.",
+      "subtitle": "Upload your CV. AyoKerja analyzes your experience, skills, and career trajectory — matching you with the right jobs, skill gaps to bridge, and your path to growth.",
+      "target": "Tailored for students, fresh graduates, junior to mid-level professionals.",
+      "ctaMain": "Analyze CV Now",
+      "ctaSecond": "Build CV with AI",
+      "trustedBy": "Trusted by 2,400+ job seekers",
+      "dataSafe": "Encrypted Data",
+      "instant": "Instant Results"
+    },
+    "procedure": {
+      "label": "PLATFORM PROCEDURE",
+      "title": "Simple 4-Step Process",
+      "subtitle": "Four simple AI-driven steps to guide your career path from start to achievement.",
+      "step1": {
+        "title": "Upload Your CV",
+        "desc": "Upload your CV in PDF or DOCX format. Our AI instantly parses and analyzes your qualifications.",
+        "detail": "Don't have a CV yet? You can build one from scratch with our step-by-step AI wizard."
+      },
+      "step2": {
+        "title": "AI Understands Potential",
+        "desc": "AI evaluates your experience, technical skills, education, and career aspirations across industries.",
+        "detail": "Far beyond simple keyword matching — our AI understands the complete context of your career."
+      },
+      "step3": {
+        "title": "Receive Deep Insights",
+        "desc": "Get a full career profile, ATS score, targeted job recommendations, and actionable growth steps.",
+        "detail": "Delivered in a sleek, modern, interactive interface ready for instant action."
+      },
+      "step4": {
+        "title": "Ready to Apply",
+        "desc": "Create & optimize Harvard ATS-formatted CVs, fully prepared to land your dream career.",
+        "detail": "You won't just know what roles fit — you'll be empowered to secure them."
+      }
+    },
+    "features": {
+      "label": "KEY FEATURES",
+      "title": "Everything You Need",
+      "subtitle": "AyoKerja is more than a CV builder — it's an end-to-end platform for career growth and job placement.",
+      "f1Title": "Smart CV Analysis",
+      "f1Desc": "Deep AI breakdown of your CV — ATS score, strengths, weak spots, and concrete improvement feedback.",
+      "f2Title": "Automated Job Matching",
+      "f2Desc": "AI pairs your profile with active real-world job listings across industries with exact match percentages.",
+      "f3Title": "AI Career Recommendations",
+      "f3Desc": "Receive structured career trajectory guidance tailored precisely to your background.",
+      "f4Title": "Interactive Career Roadmap",
+      "f4Desc": "Step-by-step milestone mapping from your current position straight to your target role.",
+      "f5Title": "Harvard-Standard CV Builder",
+      "f5Desc": "Generate clean ATS-compliant Harvard format CVs favored by top recruiters and HR managers.",
+      "f6Title": "AI Cover Letter Generator",
+      "f6Desc": "Create persuasive & professional cover letters tailored automatically to your dream position.",
+      "f7Title": "Recruiter ATS Scoring",
+      "f7Desc": "Instant assessment based on modern automated hiring algorithms and ATS screening criteria."
+    },
+    "aiExp": {
+      "label": "AI INTELLIGENCE",
+      "title1": "AI doesn't just read your CV.",
+      "title2": "It truly understands your career.",
+      "desc": "AyoKerja goes beyond simple keyword matching. It maps out your career trajectory, strengths, and latent potential — giving you complete clarity on where you stand and where you can go.",
+      "f1Title": "Career Direction Analysis",
+      "f1Desc": "Discover which roles and domains best fit your background and experience.",
+      "f2Title": "AI Cover Letter Builder",
+      "f2Desc": "Auto-generate persuasive, professional cover letters aligned with target job postings.",
+      "f3Title": "Personal Growth Roadmap",
+      "f3Desc": "Concrete actionable steps connecting your current level to your ultimate career goal."
+    },
+    "testimonials": {
+      "label": "USER STORIES & PROVEN RESULTS",
+      "title1": "Thousands of careers ",
+      "title2": "started right here.",
+      "subtitle": "Inspiring stories from graduates and professionals who boosted ATS scores, passed top job interviews, and switched careers successfully.",
+      "t1": {
+        "role": "Fresh Graduate → Marketing Executive",
+        "quote": "I never expected AI could give such accurate CV feedback. After building a Harvard ATS CV on AyoKerja, I landed an interview within a week."
+      },
+      "t2": {
+        "role": "Final Year Student → Junior Designer",
+        "quote": "The AI career roadmap was tailored exactly to my major. It gave me clear, practical action steps for breaking into the industry."
+      },
+      "t3": {
+        "role": "Career Switcher → Business Analyst",
+        "quote": "The job recommendation and roadmap AI is incredible. I gained complete clarity on how to switch fields and what skills to learn first."
+      },
+      "successStory": "CAREER SUCCESS STORY",
+      "verifiedATS": "Verified ATS Career Result",
+      "suggestions": "Suggestions & Improvements",
+      "expClarity": "Experience Clarity",
+      "jobMatch": "Job Description Match",
+      "atsFormat": "ATS Format & Readability"
+    },
+    "cta": {
+      "label": "START NOW",
+      "title1": "Ready to unlock",
+      "title2": "your true career potential?",
+      "desc": "Join thousands of job seekers who found their ideal career path. Upload your CV now — free, no credit card required.",
+      "btnMain": "Analyze CV Now",
+      "btnRegister": "Sign Up Free",
+      "f1": "Free forever",
+      "f2": "Encrypted data",
+      "f3": "Instant AI results"
+    },
+    "stats": {
+      "s1": {
+        "label": "User Satisfaction Rating",
+        "desc": "Based on 2,400+ reviews from alumni & job seekers"
+      },
+      "s2": {
+        "label": "Selection Success Rate",
+        "desc": "Boosts your chances of passing screening & qualifications"
+      },
+      "s3": {
+        "label": "Careers Successfully Started",
+        "desc": "Spread across startups, SOEs & Fortune 500s"
+      },
+      "s4": {
+        "label": "AI Analysis Speed",
+        "desc": "Instant ATS evaluation & career recommendations"
+      }
+    },
+    "profile": {
+      "badge": "CAREER PROFILE",
+      "role": "Digital Marketing Specialist",
+      "level": "Specialist Level",
+      "mainSkill": "MAIN SKILLS",
+      "profileScore": "PROFILE SCORE",
+      "techSkill": "Technical Skills",
+      "experience": "Experience",
+      "education": "Education",
+      "insight": "Strong backend foundation with growing full-stack capabilities. Focus on Docker and cloud next.",
+      "careerPath": "Career Path: ",
+      "careerPathTarget": "Backend → Full Stack"
+    },
+    "tData": {
+      "d0": {
+        "role": "Marketing Executive",
+        "prev": "Fresh Graduate",
+        "badge": "Passed Document Screening in 7 Days",
+        "metric": "Salary Up 2.2x",
+        "quote": "I never imagined AI could read my career qualifications so deeply. After polishing my experience points with the STAR method & Harvard ATS format on this platform, my profile caught HR's attention within a week!"
+      },
+      "d1": {
+        "role": "Junior UI/UX Designer",
+        "prev": "Final Year Student",
+        "badge": "100% Precision Roadmap",
+        "metric": "Portfolio Verified",
+        "quote": "The career roadmap from AyoKerja was highly specific to my major. It helped me build a portfolio and learn the skills most sought after by HR in the industry today!"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "AyoKerja — Smart Career Companion",
+    "copyright": "© {{year}} AyoKerja • Dream Career AI Assistant",
+    "servicesTitle": "Core Services",
+    "exploreTitle": "Explore",
+    "securityTitle": "Support & Security",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "dataSecurity": "Data Security"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred. Please try again.",
+    "success": "Success!",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "and": "and",
+    "by": "by",
+    "from": "from",
+    "to": "to",
+    "of": "of",
+    "optional": "Optional",
+    "required": "Required",
+    "notFound": "Not found",
+    "retry": "Try Again",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "seeMore": "See More",
+    "new": "New",
+    "beta": "Beta",
+    "pro": "Pro",
+    "free": "Free",
+    "powered": "Powered by"
+  },
+  "ai": {
+    "systemPrompt": "You are AyoKerja AI, an intelligent AI career assistant. Help users with CV analysis, job searching, career planning, interview prep, and professional skill development. Always respond in clear, friendly, and professional English. Use neat formatting with bullet points when necessary. Do not use raw markdown symbols.",
+    "careerSystemPrompt": "You are an AI career consultant from AyoKerja. Your job is to help users plan their careers by creating detailed, realistic, and actionable roadmaps. Always respond in formal yet friendly English.",
+    "cvSystemPrompt": "You are an ATS CV specialist from AyoKerja. Your job is to help create professional, ATS-friendly, and high-quality CV content. Respond in English.",
+    "coverLetterSystemPrompt": "You are a cover letter specialist from AyoKerja. Create formal, professional cover letters that meet HR standards. Respond in English.",
+    "interviewSystemPrompt": "You are a professional interviewer from AyoKerja. Simulate a realistic interview session and provide constructive feedback. Respond in English.",
+    "thinking": "Processing...",
+    "errorFallback": "Sorry, an error occurred. Please try again!",
+    "quickPrompts": {
+      "ats": "How do I make an ATS-compliant CV?",
+      "freshGrad": "Career recommendations for Fresh Graduates?",
+      "skillGap": "How to identify skill gaps from job descriptions?",
+      "interview": "Tips for handling technical job interviews?"
+    },
+    "welcome": "Hello! I'm **AyoKerja Assistant**. I'm ready to help analyze your CV, prepare for interviews, or plan your career path.\n\nWhat can I help you with today?"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "chooseLanguage": "Choose Platform Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "account": "Account",
+    "saved": "Settings saved!"
+  }
+}

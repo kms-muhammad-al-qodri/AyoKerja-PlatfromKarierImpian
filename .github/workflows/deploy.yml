@@ -1,0 +1,43 @@
+name: Auto Deploy to cPanel
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploying to cPanel
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: ⚡ Install & Build Frontend (Vite + React)
+        run: |
+          npm ci
+          npm run build
+
+      - name: 📂 Sync Files to cPanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          security: "loose"
+          timeout: 300000
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/tests/**
+            **/scratch/**
+            .env
+            README.md

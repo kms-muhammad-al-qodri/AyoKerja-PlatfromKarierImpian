@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B1D"/>
+      <stop offset="100%" stop-color="#0D1035"/>
+    </linearGradient>
+    <linearGradient id="grd1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="50%" stop-color="#4F7CFF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+
+  <!-- Outer ring subtle glow -->
+  <rect width="64" height="64" rx="14" fill="none" stroke="url(#grd1)" stroke-width="1" opacity="0.4"/>
+
+  <!-- Sparkle / AI star icon centered -->
+  <g transform="translate(32, 32)" filter="url(#glow)">
+    <!-- Main 4-point star -->
+    <path d="M0,-17 L3,-3 L17,0 L3,3 L0,17 L-3,3 L-17,0 L-3,-3 Z"
+          fill="url(#grd1)" opacity="0.95"/>
+
+    <!-- Small accent dots -->
+    <circle cx="10" cy="-10" r="2.2" fill="#2DD4BF" opacity="0.8"/>
+    <circle cx="-10" cy="10" r="1.5" fill="#8B5CF6" opacity="0.7"/>
+
+    <!-- Center bright dot -->
+    <circle cx="0" cy="0" r="3.5" fill="#ffffff" opacity="0.95"/>
+  </g>
+</svg>
