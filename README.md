@@ -293,15 +293,17 @@ Proyek ini dilisensikan di bawah **MIT License** — lihat file [LICENSE](LICENS
 
 ---
 
-## 👤 Tim Pengembang
+## 👥 Tim Pengembang
 
 <div align="center">
 
-**kms-muhammad-al-qodri**
-
 Dikembangkan dengan ❤️ untuk lomba **APEX Rafatech**
 
-[![GitHub](https://img.shields.io/badge/GitHub-kms--muhammad--al--qodri-181717?style=for-the-badge&logo=github)](https://github.com/kms-muhammad-al-qodri)
+| | Nama | GitHub |
+|--|------|--------|
+| 👨‍💻 | **Muhammad Al Qodri** | [![GitHub](https://img.shields.io/badge/GitHub-kms--muhammad--al--qodri-181717?style=flat-square&logo=github)](https://github.com/kms-muhammad-al-qodri) |
+| 👩‍💻 | **Nur Fitri Yani** | [![GitHub](https://img.shields.io/badge/GitHub-nurfitriyani8527--lab-181717?style=flat-square&logo=github)](https://github.com/nurfitriyani8527-lab) |
+| 👨‍💻 | **Khoirul Nurfauzi** | [![GitHub](https://img.shields.io/badge/GitHub-Khoirul--Nurfauzi-181717?style=flat-square&logo=github)](https://github.com/Khoirul-Nurfauzi) |
 
 </div>
 
